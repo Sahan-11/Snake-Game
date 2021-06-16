@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    background: rgb(205, 240, 81) ;
+    justify-content: center;
+    align-items: center;
+}
+
+#ground{
+    width: 95vmin;
+    height: 95vmin;
+    background-color: rgb(194, 188, 188);
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+}
+#scorebox{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    top: 10px;
+    left: 75%;
+}
+#hiscorebox{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    top: 50px;
+    left: 75%;
+}
+.snake{
+    background-color: blue;
+    border: .25vmin solid black;
+}
+
+.food{
+    background-color: green;
+    border: .25vmin solid black;
+    border-radius: 35%;
+}
