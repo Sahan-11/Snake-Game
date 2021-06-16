@@ -11,7 +11,7 @@ let score = 0;
 function main(currentTime){
     if(gameover){
         if(confirm('You lost. Click on OK to play again')){
-            window.location='/';
+            window.location='https://sahan-11.github.io/Snake-Game/';
         }
         return;
     }
