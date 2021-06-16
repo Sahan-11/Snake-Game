@@ -1,7 +1,7 @@
 
 /********game loop*****/
 let lastrenderTime=0;
-let speed =5;
+const speed =10;
 const board = document.getElementById('ground');
 const snakebody = [{x:10,y:10}];
 let inputDirn = {x:0,y:0};
@@ -35,7 +35,6 @@ function update(){
 
    if(snakebody[0].x==food.x&&snakebody[0].y==food.y){
        score++;
-       speed=speed+0.2;
        scorebox.innerHTML="Score: "+ score;
        snakebody.push(snakebody[snakebody.length-1]);
        let newpos;
