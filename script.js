@@ -1,7 +1,7 @@
 
 /********game loop*****/
 let lastrenderTime=0;
-const speed =5;
+let speed =5;
 const board = document.getElementById('ground');
 const snakebody = [{x:10,y:10}];
 let inputDirn = {x:0,y:0};
